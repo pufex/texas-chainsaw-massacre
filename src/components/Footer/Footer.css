@@ -1,0 +1,167 @@
+.footer-top-container{
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgb(169, 17, 47);
+    border-top: 3px solid rgba(220, 20, 60, 0.285);
+    box-shadow: inset 0 3px 12px 6px rgba(220, 20, 60, 0.277);
+}
+
+.footer-top{
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.footer-header{
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-desc{
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.footer-buttons{
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-button{
+    height: 3rem;
+    padding: 0 1rem;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 300ms transform ease-in-out;
+}
+
+.footer-button:hover{
+    transform: scale(1.05);
+}
+
+.footer-button--primary{
+    background-color: white;
+    color: crimson;
+}
+
+.footer-button--secondary{
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.footer-bottom-container{
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+}
+
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+.footer-socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: auto;
+    height: auto;
+    padding: 2rem;
+}
+
+.footer-social{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+}
+
+.footer-social::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: white;
+    border-radius: 100vh;
+    transition: 300ms width ease-in-out;
+}
+
+.footer-social:hover::after{
+    width: 100%;
+}
+
+.footer-left{
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-profile-link{
+    display: block;
+    width: 100vw;
+    max-width: 150px;
+    aspect-ratio: 1/1;
+    text-decoration: none;
+    border-radius: 100%;
+    border: 3px solid white;
+    overflow: hidden;
+    transition: 300ms transform ease-in-out;
+}
+
+.footer-profile-link:hover{
+    transform: scale(1.05);
+}
+
+.footer-profile-picture{
+    width: 100%;
+    height: 100%;
+}
+
+
+

@@ -21,7 +21,7 @@ body,html{
 }
 
 #root{
-  padding-top: 7rem;
+  padding-top: 4rem;
 }
 
 .animation-button{
@@ -66,7 +66,8 @@ body,html{
 .bestof-header .header{
   padding: 1rem;
   font-size: 3rem;
-  color: white;
+  color: yellow;
+  -webkit-text-stroke: 2px black;
   font-weight: 600;
   text-align: center;
 }
@@ -80,8 +81,8 @@ body,html{
   max-width: 1440px;
   margin: 0 auto;
   padding: 2rem;
-  padding-top: 0
-  background
+  
+  margin-top: 2rem;
 }
 
 .video-container{
@@ -120,8 +121,10 @@ body,html{
 
 .article-section .article-title{
   width: 100%;
-  font-size: 2rem;
-  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+  color: yellow;
+  -webkit-text-stroke: 2px black;
 }
 
 .article-article{
@@ -165,3 +168,305 @@ body,html{
     grid-template-columns: 1fr;
   }
 }
+
+.home-window{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+.home-main{
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.darkened-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.378);
+  z-index: 1;
+}
+
+.home-article{
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-image: url("/foreground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.home-article .article-section{
+  position: relative;
+  width: 100%;
+  padding: 0;
+  z-index: 2;
+}
+
+#section-1{
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 2rem;
+  padding: 2rem 4rem;
+}
+
+#section-1 .section-left, #section-1, .section-right{
+  width: 100%;
+}
+
+#section-1 .section-left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+}
+
+#section-1 .section-left .section-header{
+  width: 100%;
+  font-size: 3rem;
+  color: yellow;
+  -webkit-text-stroke: 1.5px black;
+  font-weight: 600;
+  text-shadow: -1px -1px 5px rgba(0, 0, 0, 0.135);
+}
+
+#section-1 .section-left .section-paragraph{
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: -1px -1px 5px black;
+}
+
+#section-1 .section-right .picture{
+  width: 100%;
+  max-width: calc(1440px / 3 * 2 - 2rem);
+  object-fit: contain;
+}
+
+#section-2{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 4rem;
+  padding-top: 1rem;
+}
+
+#section-2 .section-top{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#section-2 .section-paragraph{
+  font-size: 1.5rem;
+  color: white;
+  width: 100%;
+}
+
+#section-2 .picture{
+  object-fit: contain;
+}
+
+#section-2 .section-bottom{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+#section-2 .section-pic-label{
+  display: flex; 
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#section-2 .section-bottom .picture{
+  width: 100%;
+  object-fit: contain;
+}
+
+#section-2 .section-bottom .label{
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 600;
+}
+
+#section-3{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem 4rem;
+  padding-top: 1rem;
+}
+
+#section-3 .section-header{
+  width: 100%;
+  text-align-last: center;
+  font-size: 3rem;
+  font-weight: 600;
+  color: yellow;
+  -webkit-text-stroke: 2px black;
+}
+
+#section-3 .section-split{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+#section-3 .featured{
+  background-color: rgb(12, 12, 102);
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  height: 400px;
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.241);
+  box-shadow: -3px -3px 12px 6px rgba(0, 0, 0, 0.306);
+}
+
+#section-3 .featured-header{
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+}
+
+#section-3 .featured-desc{
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: yellow;
+  -webkit-text-stroke: 1px black;
+  text-align: center;
+}
+
+#section-3 .featured-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  border-radius: 100vh;
+  width: 100%;
+  max-width: 250px;
+  background-color: crimson;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0 2rem;
+  text-wrap: nowrap;
+  font-weight: 600;
+}
+
+#section-3 .featured-button:hover{
+  background-color: rgb(192, 17, 52);
+}
+
+#section-3 .featured-header-2{
+  font-size: 1.75rem;
+  color: white;
+}
+
+.under-maintenance{
+  position: relative;
+  overflow: hidden;
+  border: 0 !important;
+}
+
+.maintenance{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/maintenance.jpg");
+}
+
+.under-maintenance .maintenance{
+  display: block;
+}
+
+.maintenance-shadow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.442);
+  z-index: 1;
+}
+
+.maintenance-content{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  transition: 300ms transform ease-in-out;
+  user-select: none;
+  cursor: not-allowed;
+}
+
+.maintenance-content:hover{
+  transform: scale(1.05);
+}
+
+.maintenance-header{
+  color: white;
+  font-weight: 600;
+  font-size: 2rem;
+  -webkit-text-stroke: 1.5px black;
+  text-shadow: -1px -1px 3px rgba(0, 0, 0, 0.27);
+}
+
+.maintenance-desc{
+  color: white;
+  font-weight: 600;
+  -webkit-text-stroke: 1px black;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+

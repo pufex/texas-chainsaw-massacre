@@ -16,7 +16,7 @@ const Slider = (props) => {
         min={min} 
         max={max} 
         value={value}
-        onMouseDown={(e) => handleSliderPress(e, value, sliderRef)}
+        onMouseDown={(e) => handleSliderPress(e)}
     />
 }
 

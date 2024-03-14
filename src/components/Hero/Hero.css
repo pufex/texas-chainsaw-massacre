@@ -1,0 +1,13 @@
+.hero{
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.animated-hero{
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: black;
+    
+}

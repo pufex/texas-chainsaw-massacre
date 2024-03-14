@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Navbar from "../components/Navbar/Navbar"
+import Footer from "../components/Footer/Footer"
 import Video from "../components/Video/Video"
 import Photo from "../components/Photo/Photo"
 
@@ -109,8 +110,7 @@ const Bestof = () => {
                 </section>
             </article>
         </main>
-        <footer className='footer'>
-        </footer>
+        <Footer />
     </>
 }
 

@@ -29,11 +29,12 @@ const Video = (props) => {
         setVideoState({...videoState, buffer: false})
     }
 
-    const handleSliderPress = (e, value, ref) => {
-        let rect = ref.current.getBoundingRect();
-        let x = e.target.clientX - rect.x;
-        let newValue = x/rect.width*100;
-        setVideoState({...videoState, played: parseFloat(newValue)/100})
+    const handleSliderPress = (e) => {
+        let rect = e.target.getBoundingClientRect();
+        let finalX = e.clientX - rect.x;
+        let newValue = finalX/rect.width*100;
+        setVideoState({...videoState, played: parseFloat(newValue)/100, seeking: false})
+        videoPlayerRef.current.seekTo(newValue/100);
     }
 
     const seekHandler = (e, value) => {
@@ -69,6 +70,14 @@ const Video = (props) => {
 
     const restartHandler = () => {
         videoPlayerRef.current.seekTo(0)
+    }
+
+    const handleVolumeChange = (e) => {
+        let rect = e.target.getBoundingClientRect();
+        let finalX = e.clientX - rect.x;
+        let newVolume = finalX/rect.width*100;
+        console.log(newVolume/100);
+        setVideoState({...videoState, volume: parseFloat(newVolume)/100})
     }
 
     if(!currentVideo.video){
@@ -112,6 +121,7 @@ const Video = (props) => {
             url={currentVideo.video}
             playing={playing}
             muted={muted}
+            volume={volume}
             onBuffer={bufferStartHandler}
             onBufferEnd={bufferEndHandler}
         />
@@ -127,6 +137,7 @@ const Video = (props) => {
             seekHandler={seekHandler}
             seekMouseUpHandler={seekMouseUpHandler}
             handleSliderPress={handleSliderPress}
+            handleVolumeChange={handleVolumeChange}
             duration={formatDuration}
             currentTime={formatCurrentTime}
             volume={volume}

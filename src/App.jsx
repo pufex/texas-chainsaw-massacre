@@ -7,12 +7,12 @@ import './App.css'
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Bestof />,
+    element: <Home />,
     errorElement: <NotFound />,
   },
   {
     path: '/bestof',
-    element: <Home />,
+    element: <Bestof />,
     errorElement: <NotFound />,
   },
   

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --cookie-color: rgb(40, 171, 252); 
+    --cookie-color-hover: rgb(102, 195, 253); 
+    --cookie-color-active: rgb(119, 203, 255); 
+}
+
+.cookies-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 500px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+}
+
+.cookies-top{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--cookie-color);
+}
+
+.cookies-top::before{
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    background-image: url("/cookies.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.cookies-middle{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--cookie-color);
+}
+
+.cookies-bottom{
+    display: grid;
+    gap: 2rem;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.cookies-button{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    height: 3rem;
+    padding: 0 1rem;
+}
+
+.cookies-button--primary{
+    background-color: var(--cookie-color);
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 500;
+}
+
+.cookies-button--primary:hover{
+    background-color: var(--cookie-color-hover);
+}
+
+.cookies-button--primary:active{
+    background-color: var(--cookie-color-active);
+}
+
+.cookies-button--secondary{
+    background-color: transparent;
+    border: 3px solid var(--cookie-color);
+    font-size: 1.25rem;
+    color: var(--cookie-color);
+    font-weight: 500;
+    transition: 300ms background-color ease-in-out,
+    300ms border ease-in-out;
+}
+
+.cookies-button--secondary:hover{
+    border: 3px solid var(--cookie-color);
+    background-color: var(--cookie-color);
+    color: white;
+}
+
+.cookies-button--secondary:active{
+    border: 3px solid var(--cookie-color-active);
+    background-color: var(--cookie-color-active);
+    color: white;
+}
+
+.cookies-proceed{
+    width: 100%;
+    max-width: 150px;
+}
+

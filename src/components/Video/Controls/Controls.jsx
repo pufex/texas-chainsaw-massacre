@@ -3,7 +3,7 @@ import Slider from './Slider/Slider'
 import "./Controls.css"
 
 const Controls = (props) => {
-    const {showControls, playing, muted, played, onPlayPause, onMuting, onRewind, onForward, seekHandler, seekMouseUpHandler, handleSliderPress,duration, currentTime, volume, onRestart, ...rest} = props
+    const {showControls, playing, muted, played, onPlayPause, onMuting, onRewind, onForward, seekHandler, seekMouseUpHandler, handleSliderPress, handleVolumeChange, duration, currentTime, volume, onRestart, ...rest} = props
     
     return <div 
         className={!showControls ? "controls" : "controls active"}
@@ -44,6 +44,7 @@ const Controls = (props) => {
             min={0}
             max={100}
             value={volume*100}
+            handleSliderPress={handleVolumeChange}
           />
           <div className='time'>
               {currentTime} : {duration}

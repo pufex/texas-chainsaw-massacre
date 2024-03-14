@@ -28,7 +28,7 @@ const Navbar = (props) => {
             className={!navbarDisplay ? "nav" : "nav active"}
         >
             <div className='nav-container'>
-                <Link to="/home" className='nav-logo'>
+                <Link to="/" className='nav-logo'>
                     <img src="/texas-logo.svg" alt="Texas Logo" />
                 </Link>
                 <div 
@@ -43,14 +43,14 @@ const Navbar = (props) => {
                         {!hamburgerDisplay ? "☰" : "⌵"}
                     </div>
                     <div className='ham-list'>
-                        <Link to="/home" className='ham-link'>
+                        <Link to="/" className='ham-link'>
                             Home
                         </Link>
                         <Link to="/bestof" className='ham-link'>
                             Best of
                         </Link>
-                        <Link to="/author" className='ham-link'>
-                            Author
+                        <Link to="/gallery" className='ham-link'>
+                            Gallery
                         </Link>
                     </div>
                 </div>
