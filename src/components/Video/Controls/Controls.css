@@ -1,0 +1,204 @@
+.controls{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    padding: 0 1rem;
+    background-color: rgba(0, 0, 128, 0.342);
+    transform: translateY(100%);
+}
+
+.controls.active{
+    display: flex;
+    animation-name: slideup;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideup {
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.controls-left, .controls-right{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.control{
+    background-color: transparent;
+    color: white;
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 300ms transform ease-in-out;
+}
+
+.control:hover{
+    transform: scale(1.25);
+}
+
+.rewind-container{
+    transform: rotate(180deg);
+}
+
+.rewind{
+    padding-bottom: 2px;
+}
+
+.forward{
+    padding-bottom: 2px;
+}
+
+.pause{
+    font-size: 0.75rem;
+    padding-right: 4px;
+    padding-bottom: 1px;
+}
+
+.mute{
+    background-image: url("/volume-default.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.muted{
+    background-image: url("/volume-muted.svg");
+}
+
+.volume{
+    position: relative;
+    width: 100vw;
+    max-width: 60px;
+    height: 5px;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.volume::-webkit-slider-runnable-track{
+    width: 100%;
+    height: 100%;
+    border-radius: 100vh;
+    background-color: red;
+}
+
+.volume::-webkit-slider-thumb{
+    appearance: none;
+    transform: translateY(-5px); 
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: red;
+}
+
+.time{
+    font-size: 1rem;
+    color: white;
+    padding-left: .25rem;
+}
+
+.buffer{
+    --width: 3rem;
+    --height: 3rem;
+    position: absolute;
+    top: calc(50% - 1.5rem / 2);
+    left: calc(50% - 1.5rem / 2);
+    display: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    transform: rotate(0);
+    background-image: url("/buffer.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: spinning;
+    animation-duration: 1500ms;
+    animation-timing-function: steps(13, jump-start);
+    animation-iteration-count: infinite;
+}
+
+.buffer.active{
+    display: block;
+}
+
+@keyframes spinning {
+    0%{
+        transform: rotate(0)
+    }
+    8.33%{
+        transform: rotate(30deg)
+    }
+    16.66%{
+        transform: rotate(60deg)
+    }
+    25%{
+        transform: rotate(90deg)
+    }
+    33.33%{
+        transform: rotate(120deg)
+    }
+    41.66%{
+        transform: rotate(150deg)
+    }
+    50%{
+        transform: rotate(180deg)
+    }
+    58.33%{
+        transform: rotate(210deg)
+    }
+    66.66%{
+        transform: rotate(240deg)
+    }
+    75%{
+        transform: rotate(270deg)
+    }
+    83.33%{
+        transform: rotate(300deg)
+    }
+    91.66%{
+        transform: rotate(330deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
+.video-progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    appearance: none;
+    background-color: transparent;
+}
+
+.video-progress::-webkit-slider-runnable-track{
+    background-color: red;
+    border-radius: 100vh;
+    height: 100%;
+}
+
+.video-progress::-webkit-slider-thumb{
+    appearance: none;
+    background-color: white;
+    border-radius: 100%;
+    height: 5px;
+    width: 5px;
+}

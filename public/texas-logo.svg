@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="119.86028mm"
+   height="6.2879906mm"
+   viewBox="0 0 119.86027 6.2879906"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="texas-logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.4627806"
+     inkscape:cx="204.06341"
+     inkscape:cy="93.99906"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="47.854069"
+       y="38.283253"
+       width="502.46771"
+       height="45.119549"
+       id="rect1" />
+  </defs>
+  <g
+     inkscape:label="Warstwa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-13.674284,-13.025529)">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.6667px;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';white-space:pre;shape-inside:url(#rect1);fill:#000000;stroke:#ffffff;stroke-width:0;stroke-linecap:round"><tspan
+         x="47.853516"
+         y="119.54008"
+         id="tspan4"><tspan
+           dx="0 28.437521 28.312521 29.854191 29.479187 23.916687 11.041672 28.770859 33.104187 29.479187 15.104172"
+           id="tspan3">TEXAS CHAIN</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:0px;font-family:'Javanese Text';-inkscape-font-specification:'Javanese Text';letter-spacing:-0.137583px;word-spacing:-0.0555625px;fill:#ffffff;stroke:#ffffff;stroke-width:0;stroke-linecap:round"
+       x="13.384896"
+       y="19.17296"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="line-height:0px;letter-spacing:-0.137583px;word-spacing:-0.0555625px;baseline-shift:baseline;fill:#ffffff;stroke-width:0"
+         x="13.384896"
+         y="19.17296">TEXAS CHAINSAW MASSACRE</tspan></text>
+  </g>
+</svg>

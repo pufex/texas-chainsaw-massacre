@@ -1,0 +1,51 @@
+.video-box{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    aspect-ratio: 16/9;
+    background-color: black;
+    box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.114);
+    border-radius: 3px;
+    border: 3px solid black;
+    margin: 0 auto;
+}
+
+.info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: transparent;
+}
+
+.info:hover{
+    background-color: rgba(255, 255, 255, 0.09);
+}
+
+.info-paragraph{
+    text-align: center;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.video-title{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 3rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.188);
+    background-color: rgba(0, 0, 0, 0.33);
+    box-shadow: 0 3px 9px 6px rgba(0, 0, 0, 0.33);
+}
+

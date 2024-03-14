@@ -1,0 +1,101 @@
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgb(28,39,71);
+    background: linear-gradient(180deg, rgba(28,39,71,1) 9%, rgba(28,30,32,1) 90%);
+    height: 4rem;
+    width: 100%;
+    box-shadow: 0 0px 6px 6px rgba(255, 0, 0, 0.287);
+    transition: 300ms transform ease-out;
+    transform: translateY(-100%);
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    z-index: 999;
+}
+
+.nav.active{
+    animation-name: slidedown;
+}
+
+@keyframes slidedown {
+    from{
+        transform: translateY(-100%);
+    }to{
+        transform: translateY(0%);
+    }
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0.25rem 1rem;
+}
+
+.nav-logo{
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.hamburger{
+    position: relative;
+}
+
+.hamburger-icon{
+    height: 3rem;
+    width: 3rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: white;
+}
+
+.ham-list{
+    position: absolute;
+    display: none;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    width: 150px;
+    border-bottom: 5px solid white;
+    box-shadow: 0 3px 12px 6px rgba(0, 0, 0, 0.077);
+}
+
+.ham-link{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3rem;
+    text-decoration: none;
+    color: white;
+    background: rgb(28,39,71);
+}
+
+.ham-link::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    height: 3px;
+    background-color: rgb(146, 7, 35);
+    width: 0%;
+    transition: 300ms width ease-out;
+}
+
+.ham-link:hover::after{
+    width: 100%;
+}
+
+.hamburger.active .ham-list{
+    display: flex;
+}
