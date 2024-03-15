@@ -47,7 +47,7 @@ const Home = () => {
     <Hero 
       played = {played}
     />
-    <main className='home-main'>
+    <main className='home-main' id="main">
       <article className='home-article'>
         <div className='darkened-background'></div>
         <section className='article-section' id="section-1">
@@ -103,6 +103,34 @@ const Home = () => {
               </div>
           </div>
         </section>
+        <section className="article-section" id="section-4">
+            <div className='section-left'>
+              <img 
+                className='picture'
+                src="/jim-siedow.jpg" 
+                alt="" 
+              />
+              <img 
+                className='picture'
+                src="/jim-siedow-2.jpg" 
+                alt="" 
+              />
+            </div>
+            <div className='section-right'>
+              <h1 className='section-header'>
+                Going back to cook's case...
+              </h1>
+              <p className='section-paragraph'>
+                As I mentioned earlier, in the original movie, cook's character was very down to earth, and felt very authentic. However, in the second movie, he's become crazier than ever.
+              </p> 
+              <p className='section-paragraph'>
+                While in the original movie he was very laconic, only really talking when responding to other people, or scolding Bubba or Hitchhiker, in the second movie it's complete opposite. Watching him, it almost feels like he's hosting a black comedy performance on stage, constantly complaining about his colleagues in a humorous manner. He's talking almost constantly. And I guess you could argue that (in accordance to the continuation of the original plot) trying to always stay few steps ahead of the police had a heavy toll on his mindset and could greatly affect his personality (having to be constantly on the move), and also he becomes popular when he wins the BBQ contest. But I said earlier, I don't like the direction which they took while writing script for this character.
+              </p>
+              <p className='section-paragraph'>
+                The whole second movie is insane. From 2 chainsaws wielding police officer confronting the family by himself with the said tools, to the cook going kamikaze with a grenade, killing himself and everyone around in the proccess; everything about this movie is so surreal and absurd - flipside of what the original, Texas Chainsaw Massacre of 1974, was.
+              </p>
+            </div>
+        </section>  
         <section className='article-section' id='section-3'>
             <h1 className='section-header'>
               Featured
@@ -142,6 +170,7 @@ const Home = () => {
                 </Link>
               </div>
             </div>
+  
         </section>
       </article>
     </main>

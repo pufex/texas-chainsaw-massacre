@@ -43,13 +43,13 @@ const Navbar = (props) => {
                         {!hamburgerDisplay ? "☰" : "⌵"}
                     </div>
                     <div className='ham-list'>
-                        <Link to="/" className='ham-link'>
+                        <Link to="/#main" className='ham-link'>
                             Home
                         </Link>
-                        <Link to="/bestof" className='ham-link'>
+                        <Link to="/bestof#main" className='ham-link'>
                             Best of
                         </Link>
-                        <Link to="/gallery" className='ham-link'>
+                        <Link to="/gallery#main" className='ham-link'>
                             Gallery
                         </Link>
                     </div>

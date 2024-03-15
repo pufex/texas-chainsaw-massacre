@@ -12,7 +12,7 @@
     animation-duration: 300ms;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
-    z-index: 999;
+    z-index: 998;
 }
 
 .nav.active{
@@ -46,6 +46,7 @@
 
 .hamburger{
     position: relative;
+    user-select: none;
 }
 
 .hamburger-icon{
@@ -54,6 +55,7 @@
     font-size: 2.25rem;
     font-weight: 600;
     color: white;
+    cursor: pointer;
 }
 
 .ham-list{
@@ -77,6 +79,9 @@
     text-decoration: none;
     color: white;
     background: rgb(28,39,71);
+    cursor: pointer;
+    text-decoration: none;
+    user-select: none;
 }
 
 .ham-link::after{
