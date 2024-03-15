@@ -146,6 +146,9 @@ const Home = () => {
                     <p className='maintenance-desc'>
                       Carry on browsing, sir.
                     </p>
+                    <p className='maintenance-desc'>
+                      (use hamburger instead)
+                    </p>
                   </div>
                 </div>
                 <h1 className='featured-header'>
@@ -154,7 +157,7 @@ const Home = () => {
                 <p className='featured-desc'>
                   Some good posters, photos from the movie ect. I just picked them out from google, but they are enormous!
                 </p>
-                <Link to="/gallery" className='featured-button'>
+                <Link to="/gallery#main" className='featured-button'>
                   Check it out
                 </Link>
               </div>
@@ -165,7 +168,7 @@ const Home = () => {
                 <p className='featured-desc'>
                   My favorite clips from the original movie. They are really good. Got like 7 of them now. Go and take a look!
                 </p>
-                <Link to="/gallery" className='featured-button'>
+                <Link to="/bestof#main" className='featured-button'>
                   Check it out
                 </Link>
               </div>

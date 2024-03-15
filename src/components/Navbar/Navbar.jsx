@@ -28,8 +28,11 @@ const Navbar = (props) => {
             className={!navbarDisplay ? "nav" : "nav active"}
         >
             <div className='nav-container'>
-                <Link to="/" className='nav-logo'>
+                <Link to="/" className='nav-logo--desktop'>
                     <img src="/texas-logo.svg" alt="Texas Logo" />
+                </Link>
+                <Link to="/" className='nav-logo--mobile'>
+                    <img src="/texas-logo-mobile.svg" alt="Texas Logo" />
                 </Link>
                 <div 
                     className={!hamburgerDisplay ? "hamburger" : "hamburger active"}

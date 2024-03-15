@@ -3,11 +3,61 @@
     background-color: black;
     overflow: hidden;
     margin-bottom: 2rem;
+    min-height: 100vh;
+}
+
+@media (max-width: 1000px){
+    .hero{
+        margin-bottom: 0.25rem;
+    }
+}
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .animated-hero{
     width: 100%;
-    aspect-ratio: 16/9;
     background-color: black;
-    
+    object-fit: cover;
+    object-position: center;
+}
+
+.animated-hero--mobile{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100%;
+    padding: 2rem;
+}
+
+.animated-hero--mobile p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: yellow;
+}
+
+@media (max-width: 1000px) {
+    .animated-hero{
+        display: none;
+    }
+
+    .animated-hero--mobile{
+        display: flex;
+    }
+
+}
+
+@media (max-width: 600px){
+    .animated-hero--mobile p{
+        font-size: 2rem;
+    }
 }
